@@ -215,7 +215,20 @@ nav a {
 	color: #fff;
 	text-decoration: none;
 }
-.filler {
+.sale-container {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+main {
+	margin: 0 10.5%;
 	height: 200vh;
 	width: 100%;
+}
+.breadcrumbs li a {
+	text-decoration: none;
+	color: unset;
+}
+.breadcrumbs li a:hover {
+	text-decoration: underline;
 }

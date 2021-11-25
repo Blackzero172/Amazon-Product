@@ -12,6 +12,9 @@
 .text-small {
 	font-size: 0.75rem;
 }
+.font-thin {
+	font-weight: 200;
+}
 .font-regular {
 	font-weight: 400;
 }
