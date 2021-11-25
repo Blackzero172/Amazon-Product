@@ -69,6 +69,8 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "Amazon Ember";
+	letter-spacing: -0.1px;
+	word-spacing: 0;
 }
 header {
 	width: 100%;
@@ -76,9 +78,11 @@ header {
 	background: #131921;
 	display: flex;
 	align-items: center;
-	justify-content: space-evenly;
+	justify-content: space-around;
+	padding: 0 0.75rem;
 }
 nav {
+	padding: 0 1rem;
 	background: #232f3e;
 	width: 100%;
 	height: 2.45rem;
@@ -93,7 +97,10 @@ nav {
 .logo-container,
 .search-bar,
 .search-bar .category-btn,
-.search-bar .search-btn {
+.search-bar .search-btn,
+.language-select,
+.sign-in-btn,
+.cart {
 	height: 80%;
 	display: flex;
 	align-items: center;
@@ -105,25 +112,24 @@ nav {
 }
 .geo-location .placeholder {
 	color: #ccc;
-	font-weight: 400;
-	font-size: 0.75rem;
 	margin-left: 1rem;
 }
 .geo-location .location {
-	font-size: 0.9rem;
 	margin-right: 1.2rem;
-	display: inline-block;
 }
-.geo-location .location-container {
+.geo-location .location-container,
+.sign-in-btn .account-container,
+.orders .order-container {
 	margin-top: -5px;
 }
 .search-bar {
-	width: 60%;
+	width: 66%;
 	height: 65%;
 	background: white;
 	border-radius: 5px;
 	flex-direction: row;
 	justify-content: space-between;
+	margin: 0 0.75rem;
 }
 .search-bar .category-btn,
 .search-bar .search-btn {
@@ -134,8 +140,13 @@ nav {
 	border-bottom-left-radius: 5px;
 	border: 0.5px solid #ccc;
 }
-.search-bar .category-btn p {
-	font-size: 0.8rem;
+.search-bar .category-btn:hover {
+	background: #c5c5c5;
+	cursor: pointer;
+}
+.search-bar .search-btn:hover {
+	background: #e4aa5e;
+	cursor: pointer;
 }
 .search-bar .category-btn p i {
 	margin-left: 5px;
@@ -147,4 +158,64 @@ nav {
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
 	border: 0.5px solid #febd69;
+}
+.language-select {
+	flex-direction: row;
+	width: 2.5%;
+}
+.language-select img {
+	margin-top: 0.6rem;
+	margin-right: 0.2rem;
+}
+.language-select i {
+	color: rgba(220, 220, 220, 0.8);
+	margin-top: 1rem;
+}
+.sign-in-btn,
+.orders {
+	align-items: unset;
+	padding: 10px;
+}
+.sign-in-btn i {
+	color: rgba(220, 220, 220, 0.8);
+}
+.cart {
+	width: 4.5%;
+	flex-direction: row;
+	position: relative;
+}
+.cart h3 {
+	margin-top: 0.6rem;
+}
+.cart p {
+	color: #f08804;
+	position: absolute;
+	top: 10%;
+	left: 31%;
+}
+nav ul {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+}
+nav ul li {
+	padding: 0.2rem 0.4rem;
+	margin: 0 0.25rem;
+	display: flex;
+	align-items: center;
+}
+.hamburger-icon {
+	width: 37%;
+	height: 37%;
+	margin-bottom: -2px;
+}
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+.filler {
+	height: 200vh;
+	width: 100%;
 }
