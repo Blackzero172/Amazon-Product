@@ -67,4 +67,84 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+	font-family: "Amazon Ember";
+}
+header {
+	width: 100%;
+	height: 3.725rem;
+	background: #131921;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+nav {
+	background: #232f3e;
+	width: 100%;
+	height: 2.45rem;
+}
+.logo-container {
+	width: 6%;
+}
+.logo-container img {
+	padding-top: 3px;
+}
+.geo-location,
+.logo-container,
+.search-bar,
+.search-bar .category-btn,
+.search-bar .search-btn {
+	height: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.geo-location {
+	width: 4.5%;
+}
+.geo-location .placeholder {
+	color: #ccc;
+	font-weight: 400;
+	font-size: 0.75rem;
+	margin-left: 1rem;
+}
+.geo-location .location {
+	font-size: 0.9rem;
+	margin-right: 1.2rem;
+	display: inline-block;
+}
+.geo-location .location-container {
+	margin-top: -5px;
+}
+.search-bar {
+	width: 60%;
+	height: 65%;
+	background: white;
+	border-radius: 5px;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.search-bar .category-btn,
+.search-bar .search-btn {
+	height: 100%;
+	width: 5%;
+	background: #f3f3f3;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border: 0.5px solid #ccc;
+}
+.search-bar .category-btn p {
+	font-size: 0.8rem;
+}
+.search-bar .category-btn p i {
+	margin-left: 5px;
+}
+.search-bar .search-btn {
+	width: 4%;
+	background: #febd69;
+	border-radius: 0;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border: 0.5px solid #febd69;
 }

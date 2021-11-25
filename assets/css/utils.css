@@ -1,0 +1,7 @@
+.btn {
+	color: white;
+}
+.btn:hover {
+	border: white solid 1px;
+	cursor: pointer;
+}
