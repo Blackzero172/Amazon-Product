@@ -71,6 +71,7 @@
 	font-family: "Amazon Ember";
 	letter-spacing: -0.1px;
 	word-spacing: 0;
+	list-style: none;
 }
 header {
 	width: 100%;
@@ -221,9 +222,12 @@ nav a {
 	justify-content: center;
 }
 main {
-	margin: 0 10.5%;
+	padding: 0 10.5%;
 	height: 200vh;
 	width: 100%;
+}
+.breadcrumbs {
+	margin-bottom: 1rem;
 }
 .breadcrumbs li a {
 	text-decoration: none;
@@ -231,4 +235,39 @@ main {
 }
 .breadcrumbs li a:hover {
 	text-decoration: underline;
+}
+.layout-grid {
+	display: flex;
+}
+.sticky-scroll-container {
+	display: flex;
+	margin: 0.3rem;
+	position: sticky;
+	top: 0;
+	width: 51%;
+}
+.layout-grid .img-select {
+	width: 40px;
+	height: 40px;
+	margin: 0.3rem 0.5rem 0.6rem 0;
+}
+.layout-grid .img-select img {
+	border: 0.5px #44444477 solid;
+	border-radius: 3px;
+}
+
+.layout-grid .image-container {
+	width: 100%;
+	height: 73vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.layout-grid .preview-img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+.text-container {
+	width: 30%;
 }

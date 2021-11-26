@@ -6,6 +6,10 @@
 	border: white solid 1px;
 	cursor: pointer;
 }
+.layout-grid .selected img {
+	border: #f08804 1px solid;
+	box-shadow: #f08804 0 0 8px;
+}
 .text-gray {
 	color: #ccc;
 }
