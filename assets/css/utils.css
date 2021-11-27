@@ -31,11 +31,17 @@
 .text-green {
 	color: #007600;
 }
+.text-tiny {
+	font-size: 0.7rem;
+}
 .text-small {
 	font-size: 0.75rem;
 }
 .text-large {
 	font-size: 1.1rem;
+}
+.text-xlarge {
+	font-size: 1.9rem;
 }
 .font-thin {
 	font-weight: 200;
@@ -60,6 +66,9 @@
 }
 .text-regular {
 	font-size: 0.9rem;
+}
+.text-xsmall {
+	font-size: 0.8rem;
 }
 .display-inblock {
 	display: inline-block;
