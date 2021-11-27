@@ -74,7 +74,7 @@
 	list-style: none;
 }
 header {
-	width: 100%;
+	min-width: 100%;
 	height: 3.725rem;
 	background: #131921;
 	display: flex;
@@ -85,7 +85,7 @@ header {
 nav {
 	padding: 0 1rem;
 	background: #232f3e;
-	width: 100%;
+	min-width: 100%;
 	height: 2.45rem;
 }
 .logo-container {
@@ -200,13 +200,14 @@ nav ul {
 	flex-direction: row;
 }
 nav ul li {
+	height: 80%;
 	padding: 0.2rem 0.4rem;
 	margin: 0 0.25rem;
 }
 .hamburger-icon {
-	width: 37%;
-	height: 37%;
-	margin-bottom: -2px;
+	width: 60%;
+	height: 60%;
+	padding-right: 5px;
 }
 nav a {
 	color: #fff;
@@ -218,8 +219,8 @@ nav a {
 	justify-content: center;
 }
 main {
-	padding: 0 10.5%;
 	height: 200vh;
+	padding: 0 10.5%;
 	width: 100%;
 }
 .breadcrumbs {
@@ -237,10 +238,18 @@ main {
 }
 .sticky-scroll-container {
 	display: flex;
+	flex-direction: column;
+	align-items: center;
 	margin: 0.3rem;
 	position: sticky;
 	top: 0;
+	/* bottom: 0; */
 	width: 51%;
+	height: 100%;
+}
+.sticky-scroll-container .flex-start {
+	width: 100%;
+	justify-content: center;
 }
 .layout-grid .img-select {
 	width: 40px;
@@ -272,9 +281,10 @@ main {
 	width: 100%;
 }
 .text-container * {
-	padding: 1px;
+	padding: 1px 0;
 }
-.text-container i {
+.rating-container i,
+.desc-container i {
 	font-size: 0.5rem;
 	color: #606060;
 	padding: 0 7px;
@@ -285,8 +295,10 @@ main {
 }
 .amazons-choice-container {
 	margin-top: 4px;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #cccccc88;
 }
-.amazons-choice-container p {
+.amazons-choice-container p.flex-center {
 	padding: 3px 7px;
 	color: #fff;
 	background: #232f3e;
@@ -298,4 +310,235 @@ main {
 	border-right: 11px solid transparent;
 	border-top: 23px solid;
 	color: #232f3e;
+}
+.desc-container {
+	display: flex;
+	padding-top: 12px;
+	flex-direction: column;
+}
+.price-container {
+	display: flex;
+	padding-bottom: 8px;
+}
+.price-text {
+	margin-left: 3px;
+	width: 90%;
+}
+.desc-container a i {
+	padding: 3px;
+}
+.desc-container .fees-text {
+	line-height: 1.45;
+}
+.properties-container {
+	margin-top: 5px;
+	line-height: 1.5;
+	overflow: hidden;
+}
+.see-more-btn {
+	width: 100%;
+	border-bottom: 1px solid #cccccc88;
+	padding-bottom: 5px;
+}
+.see-more-btn i,
+.shipping-container fees-text i {
+	margin: 0;
+	padding: 0;
+	font-size: 0.5rem;
+}
+.about-section {
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+.about-section ul {
+	margin-left: 1rem;
+}
+.about-section ul li {
+	list-style: disc;
+}
+.compare-link {
+	margin-bottom: 1rem;
+}
+.compare-link ~ a {
+	padding-bottom: 0.8rem;
+	border-bottom: 1px solid #cccccc88;
+}
+.similar-suggestion {
+	margin-top: 1rem;
+}
+.similar-suggestion a {
+	line-height: 1.5;
+}
+.suggestion-card img {
+	width: 20%;
+}
+.rating-text {
+	margin-left: 5.75rem;
+}
+.rating-text img {
+	width: 22%;
+}
+.side-menu {
+	width: 16.5%;
+	height: 80vh;
+	margin-left: 1vw;
+}
+.shipping-container,
+.new-items {
+	border: 1px solid #cccccc;
+	padding: 1rem;
+	border-radius: 5px;
+	line-height: 1.5;
+}
+.shipping-info {
+	margin: 10px 0 17px 0;
+}
+.location-btn {
+	margin-bottom: 5px;
+}
+.location-btn img {
+	filter: invert(100);
+	width: 7%;
+	margin-right: 0.5rem;
+}
+.quantity-select p,
+.add-to-list {
+	margin-top: 0.5rem;
+	background: #f0f2f2;
+	padding: 1px 6px;
+	border: 1px solid #cccccc;
+	border-radius: 8px;
+	box-shadow: 0px 0px 2px 2px #cccccc88;
+}
+.quantity-select:hover {
+	background: #e3e6e6;
+}
+.add-to-cart,
+.buy-btn {
+	background: #ffd814;
+	justify-content: center;
+	text-decoration: none;
+	color: #333;
+	height: 3.5vh;
+	width: 100%;
+	border-radius: 25px;
+	margin: 0.5rem 0;
+}
+.add-to-cart:hover {
+	background: #f7ca00;
+}
+.buy-btn {
+	background: #ffa41c;
+}
+.buy-btn:hover {
+	background: #fa8900;
+}
+.secure-transaction-container {
+	margin-bottom: 0.9rem;
+}
+.secure-transaction-container img {
+	width: 5%;
+	margin-right: 0.8rem;
+}
+.shipping-container .property-label {
+	width: 35%;
+}
+.return-policy {
+	margin: 0.5rem 0 0.2rem 0;
+}
+.gift-receipt-checkbox {
+	padding-bottom: 1rem;
+	border-bottom: 1px solid #cccccc88;
+}
+.gift-receipt-checkbox p {
+	margin-left: 0.3rem;
+	margin-top: -0.2rem;
+}
+.add-to-list {
+	margin-top: 1rem;
+	background: linear-gradient(to bottom, #f7f8fa, #e7e9ec);
+	border-radius: 3px;
+	border: 1px solid #aaa;
+	padding: 0.25rem 0.5rem;
+}
+.new-items {
+	margin-top: 1.5rem;
+}
+.new-items span {
+	margin-left: 0.25rem;
+}
+.new-items i {
+	margin-left: 4rem;
+}
+.share-container,
+.sell-container {
+	justify-content: center;
+	width: 100%;
+	margin-top: 1rem;
+}
+.share-container * {
+	margin: 0.2rem;
+}
+.sell-container {
+	flex-direction: column;
+}
+.sell-btn {
+	padding: 5px;
+	border: 1px solid #cccccc88;
+	border-radius: 8px;
+	padding: 0.3rem 0.5rem;
+}
+
+.carousel {
+	margin-top: 1.5rem;
+	width: 100%;
+	/* height: 17%; */
+	border-bottom: 1px solid #ccc;
+	flex-direction: column;
+	padding-bottom: 1rem;
+}
+.carousel h3,
+.carousel p {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.carousel p {
+	position: absolute;
+	right: 0;
+}
+.carousel .carousel-text {
+	position: relative;
+	align-self: flex-start;
+	width: 100%;
+}
+.cards-container {
+	margin-top: 2rem;
+	width: 90%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.card {
+	display: flex;
+	flex-direction: column;
+	padding: 0 0.9rem;
+}
+.card-rating img {
+	width: 55%;
+}
+.arrow-button {
+	align-self: center;
+	background: #fff;
+	border: 1px solid #cccccc88;
+	border-radius: 5px;
+	box-shadow: 0 0 2px 2px #cccccc44;
+	margin: 1.5rem;
+}
+.arrow-button i {
+	padding: 11px;
+}
+@media (max-width: 769px) {
+	body {
+		width: 200vw;
+	}
 }

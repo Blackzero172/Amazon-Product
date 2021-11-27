@@ -13,19 +13,29 @@
 .link:hover {
 	color: #c7511f;
 	text-decoration: underline;
+	cursor: pointer;
 }
 .layout-grid .selected img {
 	border: #f08804 1px solid;
 	box-shadow: #f08804 0 0 8px;
 }
 .text-gray {
-	color: #ccc;
+	color: #555;
 }
 .text-orange {
 	color: #f08804;
 }
+.text-dark-orange {
+	color: #c7511f;
+}
+.text-green {
+	color: #007600;
+}
 .text-small {
 	font-size: 0.75rem;
+}
+.text-large {
+	font-size: 1.1rem;
 }
 .font-thin {
 	font-weight: 200;
@@ -60,4 +70,15 @@
 .flex-center {
 	display: flex;
 	align-items: center;
+}
+.flex-start {
+	display: flex;
+	align-items: flex-start;
+}
+.property-label {
+	width: 24%;
+	padding-right: 2px;
+}
+.minimized {
+	height: 11.25rem;
 }
