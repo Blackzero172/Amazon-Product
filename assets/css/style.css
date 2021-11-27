@@ -197,15 +197,11 @@ nav {
 nav ul {
 	width: 100%;
 	height: 100%;
-	display: flex;
-	align-items: center;
 	flex-direction: row;
 }
 nav ul li {
 	padding: 0.2rem 0.4rem;
 	margin: 0 0.25rem;
-	display: flex;
-	align-items: center;
 }
 .hamburger-icon {
 	width: 37%;
@@ -259,9 +255,7 @@ main {
 .layout-grid .image-container {
 	width: 100%;
 	height: 73vh;
-	display: flex;
 	justify-content: center;
-	align-items: center;
 }
 .layout-grid .preview-img {
 	display: block;
@@ -270,4 +264,38 @@ main {
 }
 .text-container {
 	width: 30%;
+}
+.text-container h2 {
+	line-height: 1.35;
+}
+.text-container .rating-container {
+	width: 100%;
+}
+.text-container * {
+	padding: 1px;
+}
+.text-container i {
+	font-size: 0.5rem;
+	color: #606060;
+	padding: 0 7px;
+	margin-right: 10px;
+}
+.text-container a {
+	padding: 0 4px;
+}
+.amazons-choice-container {
+	margin-top: 4px;
+}
+.amazons-choice-container p {
+	padding: 3px 7px;
+	color: #fff;
+	background: #232f3e;
+}
+.triangle {
+	margin-top: 1px;
+	width: 0;
+	height: 0;
+	border-right: 11px solid transparent;
+	border-top: 23px solid;
+	color: #232f3e;
 }

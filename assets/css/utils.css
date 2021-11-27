@@ -6,12 +6,23 @@
 	border: white solid 1px;
 	cursor: pointer;
 }
+.link {
+	color: #007185;
+	text-decoration: none;
+}
+.link:hover {
+	color: #c7511f;
+	text-decoration: underline;
+}
 .layout-grid .selected img {
 	border: #f08804 1px solid;
 	box-shadow: #f08804 0 0 8px;
 }
 .text-gray {
 	color: #ccc;
+}
+.text-orange {
+	color: #f08804;
 }
 .text-small {
 	font-size: 0.75rem;
@@ -42,4 +53,11 @@
 }
 .display-inblock {
 	display: inline-block;
+}
+.display-block {
+	display: block;
+}
+.flex-center {
+	display: flex;
+	align-items: center;
 }
